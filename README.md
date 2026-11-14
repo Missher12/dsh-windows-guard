@@ -1,4 +1,4 @@
-# Guard 0.5.0
+# Guard 0.5.1
 
 同一个 Cordis 插件支持 **Windows 和 macOS**，目标是减少 Token、减少不可用工具调用、提高效率、减少执行轨迹中的实际失败。通过当前会话的 Shell 验证、工具可用性过滤和成功输出精简实现；批量文件与办公工具用于合并零碎调用。安装标识仍为 `dsh-windows-guard`，原 ID 和配置继续使用。
 
@@ -13,20 +13,20 @@
 
 ## 安装
 
-支持 DSH **0.2.1-rc.4 / 0.2.2-rc.1**，Node **24.9+**。批处理需要当前会话提供 `subprocess`、沙箱策略及 `load_workspace_dependencies`；桌面版自带的 Python/Office 运行时可直接使用。PDF 读写库随插件附带，不修改全局 Python。转换和公式重算使用宿主 Office skills 配置的 LibreOffice Kit。
+支持 DSH **0.2.1-rc.4 / 0.2.2-rc.1 / 0.2.2-rc.3**，Node **24.9+**。批处理需要当前会话提供 `subprocess`、沙箱策略及 `load_workspace_dependencies`；桌面版自带的 Python/Office 运行时可直接使用。PDF 读写库随插件附带，不修改全局 Python。转换和公式重算使用宿主 Office skills 配置的 LibreOffice Kit。
 
-优先使用 DSH 插件管理器原位安装 `dsh-windows-guard-0.5.0.tgz`，按宿主提示加载更新。需要使用命令行安装时，在宿主空闲并正常退出后执行：
+优先使用 DSH 插件管理器原位安装 `dsh-windows-guard-0.5.1.tgz`，按宿主提示加载更新。需要使用命令行安装时，在宿主空闲并正常退出后执行：
 
 macOS：
 
 ```sh
-dsh plugin --profile desktop add ./dsh-windows-guard-0.5.0.tgz
+dsh plugin --profile desktop add ./dsh-windows-guard-0.5.1.tgz
 ```
 
 Windows PowerShell：
 
 ```powershell
-$bundlePath = (Resolve-Path -LiteralPath '.\dsh-windows-guard-0.5.0.tgz').Path
+$bundlePath = (Resolve-Path -LiteralPath '.\dsh-windows-guard-0.5.1.tgz').Path
 dsh.cmd plugin --profile desktop add "$bundlePath"
 ```
 
