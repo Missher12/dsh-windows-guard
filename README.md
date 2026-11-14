@@ -1,5 +1,7 @@
 # Guard 0.5.1
 
+![Guard · 执行守卫（品牌插画）](docs/images/cover-v2.png)
+
 同一个 Cordis 插件支持 **Windows 和 macOS**，目标是减少 Token、减少不可用工具调用、提高效率、减少执行轨迹中的实际失败。通过当前会话的 Shell 验证、工具可用性过滤和成功输出精简实现；批量文件与办公工具用于合并零碎调用。安装标识仍为 `dsh-windows-guard`，原 ID 和配置继续使用。
 
 ## 0.5.0 效率升级
